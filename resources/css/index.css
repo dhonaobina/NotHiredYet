@@ -1,3 +1,6 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .navbar {
     background-color: white;
     position: fixed;
@@ -24,10 +27,41 @@
     padding: 100px 0;
 }
 
-#small-img {
+#small-img { 
     height: 150px;
     width: 150px;
     filter: drop-shadow(1px 1px 1px black);
+}
+
+.circle-container {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle-container img {
+    transition: transform 0.7s ease-in-out;
+}
+
+.circle-container img:active {
+    transform: rotate(360deg); 
+}
+
+.main-section {
+    padding: 20px 40px;
+}
+
+#aboutme ul {
+    list-style-type: none;
+}
+
+.avatar {
+    background-image: url('../images/DhonaObina.png');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 #main {
@@ -41,4 +75,24 @@
 
 a.blue {
     color: blue;
+}
+
+.footer {
+    color: white;
+}
+
+.animated-footer {
+    background-color: #4d00ff;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.8s ease; /* Animation duration and easing */
+}
+
+.animated-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.animated-footer:hover {
+    transform: rotate(180deg); /* Rotate 360 degrees on hover */
 }
